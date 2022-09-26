@@ -1,2 +1,1 @@
-# AppliedCryptography
-Project
+# APPLIED_CRYPTOGRAPHY

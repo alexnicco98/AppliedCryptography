@@ -1083,13 +1083,7 @@ string receive_opt_request(long sock, unsigned char* session_key, unsigned int c
 			close(sock);
 		handleErrors("Error in read_bytes");
 	}
-
-    /**     controllare counter per evitare
-            replay attack
-    **/
-
-    //memcpy(counter, &aad[OPT_LEN], sizeof(int));
-    //*counter = *counter + 1;
+	
     add_counter_cs(user);
 
     // decifra il ciphertext
